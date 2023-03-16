@@ -1,2 +1,2 @@
 #!/bin/bash
-cfile=$(basename "$CFILE" .c) && gcc $CFILE -E -o "$cfile.o" 
+cfile=$(basename "$CFILE" .c) && gcc -o "$cfile.c" "$cfile.o" 
