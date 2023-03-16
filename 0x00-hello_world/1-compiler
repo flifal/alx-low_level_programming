@@ -1,0 +1,2 @@
+#!/bin/bash
+cfile=$(basename "$CFILE" .c) && gcc $CFILE -E -o "$cfile.o" 
