@@ -15,15 +15,15 @@ int main(void)
 
 	for (i = 0; i <= 98; i++)
 	{
-		for (j = i; j <= 99; j++)
+		for (j = i + 1; j <= 99; j++)
 		{
 			int first_digit_i = i / 10;
 			int second_digit_i = i % 10;
 			int first_digit_j = j / 10;
 			int second_digit_j = j % 10;
 
-			putchar('0' + first_digit_i);
-			putchar('0' + second_digit_i);
+			putchar(first_digit_i + '0');
+			putchar(second_digit_i + '0');
 			putchar(' ');
 			putchar('0' + first_digit_j);
 			putchar('0' + second_digit_j);
