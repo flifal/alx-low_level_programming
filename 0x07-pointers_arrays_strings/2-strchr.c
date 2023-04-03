@@ -1,22 +1,31 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _strchr - locates a character is a string
- * @s: pointer to a string
- * @c: character to locate
- *
- * Return: pointer to first accurence of the character c in string s, NULL, if the character is not found
+ * _strchr - locates a character in a string .
+ * @s: string to check
+ * @c: character to found
+ * UPDATE V1.0 : Features : Pointers implementation instead of Arrays .
+ * Pointer/memory incrementation instead of i .
+ * Return: pointer to s or null
  */
+
 char *_strchr(char *s, char c)
 {
+
 	while (*s)
 	{
 		s++;
 
-		if (*s == c)
+			if (*s == c)
 		{
 			return (s);
 		}
+
+
 	}
-	return (NULL);
+
+		return (0);
+
+
 }
+
