@@ -5,7 +5,7 @@
  * @s: pointer to a string
  * @c: character to locate
  *
- * Return: pointer to first accurence of the character c in string s, 0, if the character is not found
+ * Return: pointer to first accurence of the character c in string s, NULL, if the character is not found
  */
 char *_strchr(char *s, char c)
 {
@@ -18,5 +18,5 @@ char *_strchr(char *s, char c)
 			return (s);
 		}
 	}
-	return (0);
+	return (NULL);
 }
